@@ -93,15 +93,14 @@ function Salas() {
         };
     };
 
-    const handleEliminarSala = (salaId) => {
-        axios.delete(`${import.meta.env.VITE_BACKEND_URL}/games/${salaId}`)
-            .then(() => {
-                console.log('Sala eliminada con éxito');
-                cargarSalas();
-            })
-            .catch((error) => {
-                console.error('Error al eliminar sala:', error);
-            });       
+    const handleEliminarSala = async (salaId) => {
+        try {
+            const response = await axios.delete(`${import.meta.env.VITE_BACKEND_URL}/games/${salaId}`);
+            console.log('Sala eliminada con éxito');
+            await cargarSalas();
+        } catch (error) {
+            console.error('Error al eliminar sala:', error);
+        };     
     };
 
     const cargar_avatares_asignados = async (salaId) => {
