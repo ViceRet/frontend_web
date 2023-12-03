@@ -1,0 +1,93 @@
+.container_tienda {
+    background-image: url("/tienda_img/textura3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 650px;
+    height: 550px;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+.container_letrero {
+    background-image: url("/tienda_img/letrero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 90px;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+.texto_letrero {
+    margin: 0 auto;
+    font-family: 'DotGothic16';
+    font-weight: 900;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.container-icon {
+    width: 65%;
+    height: 70%;
+    border: 5px solid #482405;
+    background-color: rgb(62, 6, 5);
+}
+
+
+/* CSS */
+.button-54 {
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #a68106;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 10px;  
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.comprar-wrapper {
+    display: flex;
+}
+
+.coin-icon {
+    width: 30px;  
+    height: 30px; 
+    margin-right: 5px;
+}

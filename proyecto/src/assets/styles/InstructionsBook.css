@@ -1,0 +1,133 @@
+.intro{
+    color: white;
+    font-family: 'VT323', monospace;
+    margin: auto 2em;
+    font-size: 20px;
+}
+
+.base{
+    background-color: #231540;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1em;
+}
+
+.ti{
+    font-size: 40px;
+    padding: 20px;
+    overflow: hidden;
+    animation: wave 1s linear infinite; /* Aplica la animación permanente */
+    font-family: 'DotGothic16', sans-serif;
+    color:white;
+    font-size:40px;
+    background-color: #25144d;
+}
+
+
+/* Definición de la animación de onda */
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px); /* Altura máxima de la ola */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.paragraph {
+    background-color: #E8AD64;
+    box-shadow: 0 0 0 3px black,
+            inset 0 0 0 3px black;
+    font-size: 25px;
+    padding: 1em 1em;
+}
+
+.paragraph2{
+    background-color: #8C2B34;
+    box-shadow: 0 0 0 3px white,
+            inset 0 0 0 3px white;
+    font-size: 20px;
+    padding: 0 1em;
+
+}
+
+
+.paragraph, .paragraph2{
+
+    font-family: 'VT323', monospace;
+    margin: auto 1em;
+    border: 4px solid transparent;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    transition: all 300ms;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.paragraph p, .paragraph2 p{
+    flex: 1;
+    color: white;
+    min-width: 400px;
+}
+
+
+.paragraph:hover, .paragraph2:hover{
+    transform: scale(1.02);
+}
+
+
+.icon-base{
+    width: 20%;
+    height: 20%;
+    min-width: 4em;
+    min-height: 20%;
+    max-width: 3em;
+    flex: 1;
+    padding: 0em;
+    margin: 0.6em;
+}
+
+.paragraph2 .icon-base{
+    max-width: 3em;
+    padding: 0.5em;
+}
+
+
+.icon{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.icon:hover{
+    animation: shake 0.2s linear infinite;
+}
+
+.shake{
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake{
+    0%{
+        transform: rotate(4deg);
+    }
+    50%{
+        transform: rotate(-4deg);
+    }
+    100%{
+        transform: rotate(4deg);
+    }
+}
+
+.board{
+    width: 80%;
+    padding: 1em;
+    margin: auto 1em;
+}

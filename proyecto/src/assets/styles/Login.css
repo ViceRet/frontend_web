@@ -1,0 +1,125 @@
+
+.Login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 20px;
+
+}
+
+.Login {
+    width: 430px;
+    height: 520px;
+    margin-bottom: 160px;
+    padding-bottom: 100px;
+}
+
+.Login form {
+    width: 400px;
+    background-color: rgba(82, 0, 137, 0.237);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+.Login form *{
+    color: white;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+    font-family: 'DotGothic16', monospace
+}
+
+.Login form label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'DotGothic16', monospace
+}
+
+.Login form label input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.224);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+
+.Login form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 990; 
+    color: white;
+    text-shadow: 0 0 0.2em black, 0 0 0.4em white, 0 0 0.6em white;;
+}
+
+#submitlogin {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    background-color: #e8ad64;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 9px #999;
+    color: rgb(62, 4, 62);
+}
+
+.error {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.621);
+    text-align: center;
+    margin-left: 7%;
+}
+
+.successMsg {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 3px solid green;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0, 128, 0, 0.594); 
+    text-align: center;
+    margin-left: 7%;
+}
+
+.Login form label input:-webkit-autofill,
+.Login form label input:-webkit-autofill:hover, 
+.Login form label input:-webkit-autofill:focus, 
+.Login form label input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px  rgba(255, 255, 255, 0.153) inset !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+.Login form label input:-webkit-autofill {
+    -webkit-text-fill-color: rgb(255, 255, 255) !important;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.224) inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+#a_signup {
+    color: #e8ad64;
+}

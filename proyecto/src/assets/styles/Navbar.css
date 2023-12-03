@@ -1,0 +1,117 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 125px;
+    padding: 0 2rem;
+    background-color: #231540;
+    color: #f2cf8d ;
+  }
+  
+  nav a{
+    margin: 0 4rem;
+    color: #f2cf8d ;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  
+  nav a:hover{
+    color: #bf6734;
+  }
+  
+  header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #f2cf8d ;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+  }
+
+  
+  header div,
+  nav {
+      display: flex;
+      align-items: center;
+  }
+
+
+  
+  @media only screen and (max-width: 1024px){
+    header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header nav{
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: #231540;
+        transition: 1s;
+        z-index: 1000;
+    }
+
+    header .responsive_nav{
+        transform: translateY(100vh);
+    }
+
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav a{
+        font-size: 1.5rem;
+    }
+
+  }
+
+
+.logo {
+  height: 12em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #e8ad64);
+}
+  
+.button-login {
+  margin: 0% 0% 0% 0%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #231540;
+  background-color: #e8ad64;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button-login:hover {
+  background-color: #5d4886;
+  color: #e8ad64;
+}
+
+.button-login:active {
+background-color: #5d4886;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}

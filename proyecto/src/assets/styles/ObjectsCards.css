@@ -1,0 +1,35 @@
+.icon-base2{
+    width: 20%;
+    height: 20%;
+    min-width: 8em;
+    max-width: 4em;
+    flex: 1;
+    margin: 0.6em;
+}
+
+.icon2{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.icon-base2:hover{
+    animation: shake 0.1s linear infinite;
+}
+
+.description1 {
+    display: none;
+}
+
+
+.icon-base3:hover .description1 {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: #fff; /* Color del texto */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+}
